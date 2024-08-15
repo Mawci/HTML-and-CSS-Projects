@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+    <!--Head-->
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width" />
+        <title>Nick Rau's Portfolio</title>
+        <link rel="stylesheet" type="text/css" href="./css/portfolio_css.css">
+    </head>
+
+    <!--Body-->
+    <body class="Background">
+
+        <!--Navbar-->
+        <div class="Navbar">
+            <a class="active" href="#Home">Home</a>
+            <a href="#About">About</a>
+            <a href="#GitHub">GitHub</a>
+            <a href="#Contact">Contact</a>
+        </div>
+
+        <!--Breaks inserted to add space between navbar and the first heading-->
+        <br>
+        <br>
+
+        <!--Background video-->
+        <div id="Home">
+            <video autoplay muted loop id="Typing_Video">
+                <source src="./images/videos/typing_video.mp4" type="video/mp4">
+                <!--display message if video fails to run-->
+                Your browser does not support HTML5 video.
+            </video>
+        </div>
+
+        <!--video text-->
+        <div class="Video_Text">
+            <h1 class="white-text">Junior Game Developer</h1>
+            <strong>
+                <p class="center">
+                    <q>Nothing in this world can take the place of persistence. 
+                        <br>Talent will not; nothing is more common than unsuccessful people with talent. 
+                        <br>Genius will not; unrewarded genius is almost a proverb. 
+                        <br>Education will not; the world is full of educated failures.
+                        <br>Persistence and determination alone are omnipotent.
+                    </q>
+                    <br>
+                    <br> -Calvin Coolidge
+                    <br>
+                    <br>My name is Nickolas Rau. Welcome to my portfolio website. On it, I will tell you about my background and experience.
+                    <br>
+                    <br> Thank you for stopping by and enjoy!
+                </p>
+            </strong>
+        </div>
+
+        <!--about section-->
+        <div class="Row" id="About">
+            <!--Left Column-->
+            <div class="Column_2">
+                <img src="./images/computer.jpg" alt="Image of things">
+            </div>
+            <!--Right Column-->
+            <div class="Column_1">
+                <h1>About</h1>
+                <p>
+                    I am a junior level game developer with a passion for bringing creative ideas to life. It started as a hobby, building small games that my family could play, but didn't take long before I was hooked. I started developement on my first indie title while my hunger for learning more increased.  
+                    <br>
+                    <br>I am currently enrolled as a student of <a href="https://www.learncodinganywhere.com" target="_blank">The Tech Academy</a>'s Game Developer Boot Camp, where I am learning the skills used in the industry and gaining experience in the following web and programming languages: HTML, CSS, JavaScript, SQL, C#, C++ and more. 
+                    <br>
+                    <br>When I graduate as a full-stack Junior Game Developer, I would love an opportunity to work with you on your project. <a href="#Contact">Contact</a> me below!
+                </p>
+            </div>
+        </div>
+
+        <!--GitHub Section-->
+        <div class="Row" id="GitHub">
+            <!--Left Column-->
+            <div class="Column_1">
+                <h1>GitHub</h1>
+                <p>
+                    You can view my coding projects on my GitHub profile here:
+                    <br>
+                    <p class="center"><a href="https://github.com/Mawci" target="_blank">Nick Rau's GitHub</a></p>
+                </p>
+            </div>
+            <!--Right Column-->
+            <div class="Column_2">
+                <a href=".." target="_blank"><img src="./images/GitHub.png" alt="GitHub Logo"></a>
+            </div>
+        </div>
+
+        <!--CONTACT SECTION-->
+        <div class="Row" id="Contact">
+            <!--CONTACT IMAGE, LEFT COLUMN-->
+            <div class="Column_2 Column_tall">
+                <img src="./images/message.png" alt="Contact_Image">
+            </div>
+            <!--CONTACT FORM, RIGHT COLUMN-->
+            <div class="Column_1 Column_tall">
+                <h1>Contact</h1>
+                <!--This specifies where and how to send the form data; we are leaving it blank-->
+                <form action="https://formspree.io/f/xovalaqn"method="POST">
+                    <label>Name:</label>
+                        <input type="text" placeholder="Please enter your name here">
+                    <label>Email:</label>
+                        <input type="text" id="Email" name="Email" placeholder="Please enter your email here">
+                    <label>Message:</label>
+                        <input type="text" id="Message" name="Message" placeholder="Please write your message here">
+                        <input type="submit" value="SUBMIT">
+                </form>
+            </div>
+        </div>
+
+        <!--FOOTER SECTION-->
+        <footer>
+            <p>
+                <p class="center">&copy; Prosper Consulting Inc., <a href="https://www.learncodinganywhere.com/" target="_blank">The Tech Academy</a>&nbsp;&nbsp;|&nbsp;&nbsp;2024</p>
+                <br>
+            </p>
+        </footer>
+    </body>
+</html>

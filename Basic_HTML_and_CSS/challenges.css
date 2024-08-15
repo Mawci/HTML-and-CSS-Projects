@@ -1,0 +1,159 @@
+h1{
+    font-weight: bolder;
+}
+
+body{
+    margin-top: 70px;
+}
+
+footer{
+    text-align: center;
+    font-weight: bold;
+}
+
+table, th, td{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    border: 1px double;
+}
+
+th{
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+td{
+    padding-bottom: 9px;
+    padding-top: 9px;
+}
+
+th{
+    background-color: blue;
+    color: white;
+}
+
+.navbar{
+    overflow:hidden;
+    background-color: blue;
+    position: fixed;
+    top:0;
+    left:0;
+    width: 100%;
+}
+
+.center{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    transition: 5s ease;
+    backface-visibility: hidden;
+}
+
+.middle{
+    transition: 5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+
+}
+
+.alter:hover .center {
+    opacity: .3;
+}
+
+.alter:hover .middle{
+    opacity: 1;
+}
+
+.alter{
+    position: relative;
+    text-align: center;
+    color: black;
+}
+
+.alter img{
+    filter: saturate(150%);
+    filter: sepia(75%);
+    border-radius: 40px;
+}
+
+tr:hover{
+    background-color: aqua;
+}
+
+.bottom-left{
+    position: absolute;
+    font-size: x-large;
+    bottom:8px;
+    left:525px;
+}
+.bottom-leftmost{
+    position: absolute;
+    font-size: x-large;
+    bottom: 8px;
+    left: 60px;
+    color: blue;
+    
+
+}
+
+.navbar a {
+    float: left;
+    display: block;
+    color: aliceblue;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.navbar a:hover {
+    background-color: purple;
+}
+
+.column1{
+    float:left;
+    width:50%;
+    background-color: bisque;
+    text-align: center;
+    color: crimson;
+    height: 300px;
+}
+
+.column1 p:hover{
+    color: black;
+    cursor: pointer;
+    font-weight: 900;
+    font-size: x-large;
+}
+
+.column2 p:hover {
+    color: black;
+    cursor: pointer;
+    font-weight: 900;
+    font-size: x-large;
+
+}
+
+
+.column2{
+     float: left;
+     width: 50%;
+     background-color: aqua;
+     text-align: center; 
+     color: red;   
+     height: 300px;    
+}
+
+.row:after{
+    content:"";
+    display: table;
+    clear: both;
+}
