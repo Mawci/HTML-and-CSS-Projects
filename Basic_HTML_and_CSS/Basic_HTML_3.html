@@ -2,18 +2,119 @@
 <html>
 	<head>
 		<link rel="stylesheet" type="text/css" href="Basic_CSS_1.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	</head>
 	
 	<body>
+		<!--Using this HTML Document to perform the challenges of the JavaScript Course-->
+		<script>
+			//call the function in the body to avoid flicker of initally loading with the webpage
+			document.body.classList.add('fade-out');
+			window.addEventListener('DOMContentLoaded', () => {
+				document.body.classList.remove('fade-out');
+			});
 
-		<h1>This it the heading of my document where I will make use of the div and style element</h1>
-	
+			function validateForm(){
+				let x = document.forms["myForm"]["phoneNumber"].value;
+				if(x == "") {
+					alert("Input is required");
+					return false;
+				}
+			}
+			
+			function openForm(){
+				document.getElementById("myForm").style.display = "block";
+			}
+
+			function closeForm(){
+				document.getElementById("myForm").style.display = "none";
+			}
+
+			$("#slideshow > div:gt(0)").hide();
+
+			setInterval(function () {
+				$('#slideshow > div:first')
+					.fadeout(1000)
+					.next()
+					.fadeIn(1000)
+					.end()
+					.appendTo('#slideshow');
+			}, 3000);
+			
+		</script>
+
+		<div class="main" id="section1">
+			<h2>Section 1</h2>
+			
+			<a href="#section2">Click Here to see smooth scrolling</a>
+		</div>
+
+		<h1>This is the heading of my document where I will make use of the div and style element</h1>
+		<h1 style="font-size:10vw">THIS TEXT GETS RESIZED WITH THE BROWSER</h1>
+
+		<div class="container">
+			<img src="dog.jpg" class="zoom" alt="dog">
+		</div>
+		
+		<form name="myForm" action="" onsubmit="return validateForm()" method="post">
+			<label for="phoneNumber">Phone Number:</label><br>
+			<input type="txt" id="phoneNumber" name="phoneNumber" value=""><br>
+			<input type="submit" value="Submit">
+		</form>
 		<div style="color:purple">
 			<h2>This is within my div element so the color is purple</h>
 			This is the paragraph being writtin in the div element. Note that it is also purple!
 		</div>
+
+		<div class="square"></div>
+		<a href="https://www.learncodinganywhere.com">Click here to go to the Tech Academy</a>
+
+		<button class="open-button" onclick="openForm()">Open Form</button>
+
+		<div class="form-popup" id="myForm">
+			<form action="" class="form-container">
+				<h1>Login</h1>
+
+				<label for="email"><b>Email</b></label>
+				<input type="text" placeholder="Enter Email" name="email" required>
+
+				<label for="psw"><b>Password</b></label>
+				<input type="password" placeholder="Enter Password" name="psw" required>
+
+				<button type="submit" class="btn">Login</button>
+				<button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+			</form>
+		</div>
 		
 		<p>This is text that is formatted by CSS</p>
+		<!--space to demo scroll behavior-->
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<div class="main" id="section2">
+			<h2>Section 2</h2>
+			<a href="#section1">Click Here to return to section 1 smoothly</a>
+		</div>
+
+		<div id="slideshow">
+			<div>
+				<img src="cat1.jpg">
+			</div>
+			<div>
+				<img src="cat2.png">
+			</div>
+			<div>
+				<img src="cat3.jpg">
+			</div>
+		</div>
+
 	</body>
 </html>
 	

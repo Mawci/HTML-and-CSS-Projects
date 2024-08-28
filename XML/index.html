@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <p id="XML_Example"></p>
+        <script>
+            var XML_Parser, XML_Document;
+
+            //Creates a text string
+            var Movie = "<movie>" + 
+            "<title>Shrek</title>" +
+            "<director>Andrew Adamson</director>" +
+            "<starring>Mike Meyers</starring>" + 
+            "<year>2001</year>" + 
+            "</movie>";
+
+            //Creates an XML DOM parser
+            XML_Parser = new DOMParser();
+
+            //Creates a new XML DOM object using the text string
+            XML_Document = XML_Parser.parseFromString(Movie, "text/xml");
+
+            document.getElementById("XML_Example").innerHTML = 
+            XML_Document.getElementsByTagName("title")[0].childNodes[0].nodeValue + ' '  +
+            XML_Document.getElementsByTagName("starring")[0].childNodes[0].nodeValue;
+        </script>
+    </body>
+</html>
